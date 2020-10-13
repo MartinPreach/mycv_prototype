@@ -1,0 +1,296 @@
+.navbar{
+    background: white;
+}
+
+.navbar > ul {
+    list-style: none;
+}
+
+.navbar a{
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    text-decoration-line: none;
+}
+
+.active1{
+    position: relative;
+    /* background: blue;
+    border-radius: 30px; */
+}
+
+.active1::before{
+    content: '';
+    position: absolute;
+    border: solid black 1px;
+    opacity: 10%;
+    right: 0px;
+    height: 100%;
+}
+
+.active2{
+    position: relative;
+    /* background: blue;
+    border-radius: 30px; */
+}
+
+.active2::before{
+    content: '';
+    position: absolute;
+    border: solid black 1px;
+    opacity: 10%;
+    right: 0px;
+    height: 100%;
+}
+
+.active3{
+    position: relative;
+    /* background: blue;
+    border-radius: 30px; */
+}
+
+.active3::before{
+    content: '';
+    position: absolute;
+    border: solid black 1px;
+    opacity: 10%;
+    right: 0px;
+    height: 100%;
+}
+
+.active4{
+    position: relative;
+    /* background: blue;
+    border-radius: 30px; */
+}
+
+.active4::before{
+    content: '';
+    position: absolute;
+    border: solid black 1px;
+    opacity: 10%;
+    right: 0px;
+    height: 100%;
+}
+
+/* .active1{
+    background: white;
+    border-radius: 5px;
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+                15px 15px 15px rgba(0, 0, 0, 0.1);
+} */
+
+.link{
+    display: flex;
+    color: #78cc6d;
+    justify-content: center;
+}
+
+.fas.fa-download{
+    display: flex;
+    color: black;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.fas.fa-shopping-cart{
+    display: flex;
+    color: blue;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.container-mycv{
+    position: relative;
+    /* width: 50%; */
+    height: 475px;
+    /* box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1),
+    0 -15px 35px rgba(0, 0, 0, 0.1),
+    0 15px 35px rgba(0, 0, 0, 0.1); */
+    transition: .5s;
+    background-image: linear-gradient(45deg, #11998e, #1ce669);
+}
+
+.mycv{
+    /* padding: 30px 0 30px; */
+    padding-top: 30px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.mycv .image{
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    margin-bottom: 50px;
+    /*background: #2175f5;*/
+    position: relative;
+    z-index: 1;
+}
+
+/*Aqui se pone el color del enganche*/
+.mycv .image:before{
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .2);
+    position: absolute;
+    bottom: 260%;
+    right: 0;
+    left: 0;
+    transform: scale(5.4);
+    transition: all 0.3s linear 0s;
+}
+
+.mycv .image:before{
+    height: 100%;
+}
+
+.mycv:hover .image:before{
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.mycv .image:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 30%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.mycv .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 0 6px white;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+}
+
+.mycv .image img{
+    box-shadow: 0 0 0 12px white;
+    /*transform: scale(0.78);*/
+}
+
+.mycv:hover .image img{
+    box-shadow: 0 0 0 12px green;
+    transform: scale(0.78);
+}
+
+.mycv .profile {
+    margin-bottom: 30px;
+}
+
+.mycv .name{
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.mycv .descriptionp{
+    display: block;
+    font-size: 15px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.mycv .social{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, .2);
+    position: relative;
+    bottom: 0px;
+    padding-bottom: 0px;
+    right: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.mycv:hover .social{
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.mycv .social li{
+    display: inline-block;
+}
+
+.mycv .social li a{
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: black;
+    transition: all 0.3s ease 0s;
+}
+
+.mycv .social li a:hover{
+    color: white;
+    background: black;
+    text-decoration: none;
+}
+
+.cp{
+    font-size: 15px;
+    color: black;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .downloadcv{
+    height: 100%;
+    width: 100%;
+    border-color: transparent;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #323232;;
+    background: #00F260;
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);
+    background: linear-gradient(to right, #0575E6, #00F260);
+} */
+
+.downloadcv{
+    height: 100%;
+    width: 100%;
+    border: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, .2)
+}
+
+.downloadcv:hover{
+    height: 100%;
+    width: 100%;
+    border: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;;
+    border-radius: 40px;
+    transition: all 0.3s linear 0s;
+}
+
+/* a.downloadcv:focus{
+    color: #78cc6d;
+} */

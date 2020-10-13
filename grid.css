@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  width: auto;
+}
+
+body {
+  background-color: #efefef;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  min-height: 100%;
+}
+
+.grid-container > * {
+  text-align: center;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-rows: 0.1fr auto;
+  grid-template-areas:
+    "navbar"
+    "main";
+}
+
+.navbar {
+  grid-area: navbar;
+  display: grid;
+  grid-template-areas:
+    "menu";
+}
+
+.menu {
+  grid-area: menu;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    "active1 active2 active3 active4 active5";
+    /* justify-content: center; */
+
+    /*Alinea al centro en vertical*/
+    /* align-items: center; */
+}
+
+.active1 {
+  grid-area: active1;
+}
+
+.active2 {
+  grid-area: active2;
+}
+
+.active3 {
+  grid-area: active3;
+}
+
+.active4 {
+  grid-area: active4;
+}
+
+.active5 {
+  grid-area: active5;
+}
+
+/*Despues cambiar fr a auto*/
+.main{
+  display: grid;
+  grid-area: main;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "container-mycv"
+    "conteiner-about";
+  /* align-items: center; */
+}
+.container-mycv {
+  grid-area: container-mycv;
+}
+.conteiner-about {
+  grid-area: conteiner-about;
+}
+
+.container-mycv{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.2fr;
+  grid-template-areas:
+    "mycv"
+    "cp";
+}
+
+.mycv {
+  grid-area: mycv;
+}
+
+.cp {
+  grid-area: cp;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "downloadcv linkcontact";
+}
+
+.downloadcv{
+  grid-area: downloadcv;
+}
+
+.linkcontact{
+  grid-area: linkcontact;
+}
